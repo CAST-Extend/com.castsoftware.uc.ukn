@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<metaModel file_level="client" file_no="128">
+<!-- Version: 1.0.0 -->
+<!-- Categories --> 
+  <category name="APM UKN Module" rid="2128000">
+    <description>UKN</description>
+    <inheritedCategory name="APM Client Modules"/>
+  </category>
+  <category name="APM UKN Artifacts" rid="2128001">
+    <description>UKN Artifacts</description>
+    <inheritedCategory name="APM Client Language Artifacts"/>
+  </category>
+  <category name="UKN" rid="2128002">
+    <description>UKN</description>
+    <attribute name="extensions" stringValue="*.ukn;"/>
+    <inheritedCategory name="UniversalLanguage"/>
+    <inheritedCategory name="CsvLanguage"/>
+  </category>
+  <type name="UKNProject" rid="2128003">
+    <description>UKN Project</description>
+    <inheritedCategory name="UKN"/>
+    <inheritedCategory name="APM UKN Module"/>
+    <inheritedCategory name="UAProject"/>
+ </type>
+  <type name="UKN_SUBSET" rid="2128099">
+    <description>UKN Subset</description>
+    <inheritedCategory name="UKN"/>
+    <inheritedCategory name="APM UKN Module"/>
+    <inheritedCategory name="PROJECT_SUBSET"/>
+  </type>
+  <type name="EnlightenUKN" rid="2128004">
+    <description>UKN</description>
+    <tree parent="EnlightenUniversalObjects" category="EnlightenTree"/>
+  </type>
+	
+	<type name="UKNProgram" rid="2128005">
+		<description>UKN Program</description>
+		<inheritedCategory name="UKN"/>
+		<inheritedCategory name="UAObject"/>
+        <inheritedCategory name="CAST_SQL_MetricableQuery" />
+		<inheritedCategory name="APM UKN Artifacts"/>
+		<inheritedCategory name="identification"/>
+		<inheritedCategory name="persistent"/>
+		<inheritedCategory name="bookmark"/>
+		<inheritedCategory name="POSITIONABLE"/>
+		<inheritedCategory name="metric"/>
+		<inheritedCategory name="METRICABLE"/>
+		<inheritedCategory name="EnlightenBrowsable"/>
+		<inheritedCategory name="EnlightenGraphable"/>
+		<inheritedCategory name="WithEnlightenProperties"/>
+		<inheritedCategory name="ESCALATION_ALL"/>
+		<inheritedCategory name="caseInsensitive"/>
+		<inheritedCategory name="CastSystemViews"/>	
+		<tree parent="sourceFile" category="amtParentship"/>
+		<tree parent="EnlightenUKN" category="EnlightenTree"/>
+	</type>	
+</metaModel>
